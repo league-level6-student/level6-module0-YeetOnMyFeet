@@ -11,10 +11,12 @@ class PayrollTest {
     @Test
     void itShouldCalculatePaycheck() {
         //given
-
+        double hourlyWage = 12.0;
+        int numHours = 5;
         //when
-
+        double result = hourlyWage * numHours;
         //then
+        assertEquals(60, payroll.calculatePaycheck(hourlyWage, numHours), 0.01);
     }
 
     @Test

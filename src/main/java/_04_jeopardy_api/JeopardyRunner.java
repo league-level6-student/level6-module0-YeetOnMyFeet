@@ -11,7 +11,16 @@ public class JeopardyRunner {
         JeopardyApi jeopardyApi = new JeopardyApi();
 
         //1. Create a score variable
-
+        int score = 0;
+        for (int i = 100; i <= 1000; i = i +100) {
+            if (i == 700 || i == 900){
+                jeopardyApi.getClue(i);
+                String question;
+                String answer;
+                String title;
+            }
+        }
+        System.out.println(score);
         //2. Add a for loop where:
         //i starts at 100,
         //continues while i <= 1000
